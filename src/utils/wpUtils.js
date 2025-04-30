@@ -1,9 +1,8 @@
 const axios = require("axios");
 const utilityFunctions = require("./utilityFunctions");
-const htmlResponses = require("./htmlResponses");
 
 const WORDPRESS_URL = "https://erasmuslifelaspalmas.com"
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.MEMBERSHIP_KEY;
 
 
 class WpUtils {
@@ -31,7 +30,6 @@ class WpUtils {
     }
 
     async queryByEmailOrId(email = null, id = null) {
-        console.log(API_KEY);
         const params = {
             swpm_api_action: "query",
             key: API_KEY,
@@ -108,8 +106,9 @@ class WpUtils {
                 },
             });
 
-            return {result: 'success', data: responseUpdate.data};
+            return {result: 'success', data: responseUpdate.data.member};
         } catch (error) {
+            console.error("@signup", error);
         }
     }
 }

@@ -32,9 +32,7 @@ class HtmlResponses {
                             color: green;
                         }
                         .message-box {
-                                width: 80%;
                                 max-width: 1000px;
-                                height: 50%;
                                 text-align: center;
                                 background: #fff;
                                 padding: 8rem;
@@ -42,11 +40,12 @@ class HtmlResponses {
                                 box-shadow: 0 2px 10px rgba(0,0,0,0.05);
                         }
                         .title {
-                            font-size: 10rem;
+                            font-size: 4rem;
                             margin-bottom: 1rem;
+                            font-weight: bold;
                         }
                         .text {
-                            font-size: 5rem;
+                            font-size: 2.5rem;
                         }
                         </style>
                     </head>
@@ -77,28 +76,28 @@ class HtmlResponses {
             color: #b00020;
         }
             .message-box {
-            width: 80%;
             max-width: 1000px;
-            height: 50%;
+            width: 80%;
             text-align: center;
             background: #fff;
-            padding: 8rem;
+            padding: 4rem;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
             .title {
-            font-size: 10rem;
+            font-weight: bold;
+            font-size: 4rem;
             margin-bottom: 1rem;
         }
               .text {
-            font-size: 5rem;
+            font-size: 2.5rem;
         }
         </style>
     </head>
         <body>
         <div class="message-box">
             <div class="title">🚫 Member Not Found</div>
-            <p class="text">We couldn't locate a member with email: ${email}.</p>
+            <p class="text">We couldn't locate a member with email: ${email}</p>
         </div>
         </body>
     </html>`
@@ -122,21 +121,20 @@ class HtmlResponses {
             color: #b00020;
         }
             .message-box {
-            width: 80%;
             max-width: 1000px;
-            height: 50%;
             text-align: center;
             background: #fff;
-            padding: 8rem;
+            padding: 4rem;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
             .title {
-            font-size: 10rem;
+            font-size: 4rem;
             margin-bottom: 1rem;
+            font-weight: bold;
         }
               .text {
-            font-size: 5rem;
+            font-size: 2.5rem;
         }
         </style>
     </head>
@@ -167,19 +165,19 @@ class HtmlResponses {
            .message-box {
             width: 80%;
             max-width: 1000px;
-            height: 50%;
             text-align: center;
             background: #fff;
-            padding: 8rem;
+            padding: 4rem;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
             .title {
-            font-size: 10rem;
+            font-size: 4rem;
             margin-bottom: 1rem;
+            font-weight: bold;
         }
               .text {
-            font-size: 5rem;
+            font-size: 2.5rem;
         }
         </style>
     </head>

@@ -1,4 +1,4 @@
-const wpService = require("./wpUtils");
+const wpUtils = require("./wpUtils");
 const stripe = require('stripe')(process.env.STRIPE_SECRET);
 
 class StripeUtils {
@@ -31,10 +31,10 @@ class StripeUtils {
             console.error("Webhook Error:", err.message);
         }
 
-        if (event.type === "payment_intent.succeeded") {
+        if (event.type === "charge.succeeded") {
             const paymentIntent = event.data.object;
             const email = paymentIntent.metadata.email;
-            await wpService.activateUserByEmail(email)
+            await wpUtils.activateUserByEmail(email)
         }
     }
 }
