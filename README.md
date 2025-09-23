@@ -3,6 +3,10 @@
 ## 📌 Overview
 This backend server acts as a middleware integrating with the WordPress Simple Membership Plugin API. It facilitates authentication and member data retrieval for mobile users of the **Erasmus Life Las Palmas (ELLP) mobile app**.
 
+Demo: https://drive.google.com/file/d/1ZxFBmvcNn4hw89ZqC3CMieo5GcYdQBuY/view
+
+Mobile: https://github.com/justndev/ellp-app
+
 ## 🚀 Features
 - **Member Query**: Retrieve member details using email or member ID.
 - **Member Login**: Authenticate users and return a JWT token.
